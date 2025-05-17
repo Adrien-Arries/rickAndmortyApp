@@ -1,0 +1,27 @@
+.form_container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.form_input {
+    background-color: #fff;
+    border: none;
+    outline: none;
+    padding: 7px 12px;
+    border-radius: 4px 0 0 4px;
+}
+
+.form_button {
+    background-color: #73a820;
+    color: #fff;
+    font-weight: 600;
+    border: none;
+    outline: none;
+    padding: 7px 12px;
+    border-radius: 0 4px 4px 0;
+    transition: background;
+}
+
+.form_button:hover {
+    background-color: #5d861a;
+}
