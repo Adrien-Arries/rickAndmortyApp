@@ -15,9 +15,7 @@ function ResidentCard({ url }) {
     const totalEppisodes = resident?.episode.length
     const totalEppisodesText = totalEppisodes == 1 ? 'eppisode' : 'eppisodes'
 
-    const statusClass = 
-    resident?.status == 'Alive' ? 'alive' : 
-    resident?.status == 'Dead' ? 'dead' :
+    const statusClass = resident?.status == 'Alive' ? 'alive' : resident?.status == 'Dead' ? 'dead' :
     'unknown'
 
 
@@ -26,7 +24,7 @@ function ResidentCard({ url }) {
             <div className='resident__image'>
             <img className='resident__img' src={resident?.image} alt={resident?.name} />
             <span className='resident__status'>
-                <span className={`resident--${statusClass}`} ></span>
+                <span className={`resident--${statusClass}`} />
                 {resident?.status} 
                 </span>
             </div>

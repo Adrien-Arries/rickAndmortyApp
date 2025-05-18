@@ -19,7 +19,7 @@ function Search ({onSearch}) {
         return
     }
 
-    onSearch.log(inputRef.current.value)
+    onSearch(inputRef.current.value)
     inputRef.current.value = ''
 }
 
@@ -37,7 +37,7 @@ function Search ({onSearch}) {
             </button>
             </div>
 
-            {error && <p className='error'>{error}</p> }
+            {error && <p className='error'>{error}</p>}
         </>
     )
 }
